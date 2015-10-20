@@ -1,5 +1,4 @@
 unalias gca >/dev/null 2>/dev/null #remove oh-my-zsh git plugin alias
-alias gi="copy_gitignore"
 alias gca="git_commit_all"
 
 ## Git commands
