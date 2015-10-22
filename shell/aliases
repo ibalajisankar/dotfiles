@@ -72,4 +72,5 @@ alias path='echo $PATH | tr -s ":" "\n"'
 # utils
 
 alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
+alias yt="youtube-dl"
 
