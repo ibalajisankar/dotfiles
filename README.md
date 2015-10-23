@@ -1,20 +1,19 @@
 ### Setup New Machine
 
 ```
-chmod +x setup-a-new-machine.sh
-./setup-a-new-machine.sh
+chmod +x ~/dotfiles/osx/setup-a-new-machine.sh
+sh ~/dotfiles/osx/setup-a-new-machine.sh
 ```
 
 ## Acknowledgements
 
 Inspiration and code was taken from many sources, including:
 
-* [Mathias Bynens'](https://github.com/mathiasbynens)
-  [dotfiles](https://github.com/mathiasbynens/dotfiles)
-* [Nicolas Gallagher's](https://github.com/necolas)
-  [dotfiles](https://github.com/necolas/dotfiles)
+* [Addy Osmani's](https://github.com/addyosmani)
+  [dotfiles](https://github.com/addyosmani/dotfiles/)
+
 
 
 ## License
 
-The code is available under the [MIT license](LICENSE.txt).
+The code is available under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
