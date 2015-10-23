@@ -46,6 +46,8 @@ alias npmig="npm install -g"
 alias npmu="npm update"
 alias npmr="npm uninstall"
 alias npmrg="npm uninstall -g"
+alias nom="rm -rf node_modules && npm cache clear && npm i"
+
 
 # brew
 alias bci="brew cask install"
@@ -60,6 +62,8 @@ alias phps="php -S localhost:8000"
 
 
 # custom
+
+alias f='open -a Finder'
 alias .e="subl ~/dotfiles"
 alias dld="aria2c -x 10"
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Public key copied to clipboard.'"
@@ -73,4 +77,28 @@ alias path='echo $PATH | tr -s ":" "\n"'
 
 alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
 alias yt="youtube-dl"
+
+# OSX specific
+
+alias mute="osascript -e 'set volume output muted true' > /dev/null" 
+alias unmute="osascript -e 'set volume output muted false' > /dev/null"
+
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+
+
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+
+# One of @janmoesen’s ProTip™s
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+	alias "$method"="lwp-request -m '$method'"
+done
 

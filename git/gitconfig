@@ -18,3 +18,5 @@
 	undo = reset --soft HEAD^
 [url "git@github.com:HugeThoughts/"]
   insteadOf = "git://github.com/HugeThoughts/"
+[core]
+	editor = vim

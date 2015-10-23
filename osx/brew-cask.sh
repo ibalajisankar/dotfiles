@@ -19,6 +19,10 @@ brew cask install flux
 # dev
 brew cask install iterm2
 brew cask install sublime-text3
+
+# Make sure to move Sublime Text to Application directory
+# ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+
 brew cask install imageoptim
 
 # fun

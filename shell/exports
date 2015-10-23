@@ -1,0 +1,3 @@
+# Set default editors
+export EDITOR="vim"
+export VISUAL="subl"
