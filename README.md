@@ -11,8 +11,8 @@ Inspiration and code was taken from many sources, including:
 
 * [Addy Osmani's](https://github.com/addyosmani)
   [dotfiles](https://github.com/addyosmani/dotfiles/)
-
-
+* [Cătălin’s](https://github.com/alrra)
+  [dotfiles](https://github.com/alrra/dotfiles)
 
 ## License
 

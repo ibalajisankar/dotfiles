@@ -16,6 +16,8 @@
 	ct = commit
 	unstage = reset HEAD --
 	undo = reset --soft HEAD^
+	# Amend the currently staged files to the latest commit
+	amend = commit --amend --reuse-message=HEAD
 [url "git@github.com:HugeThoughts/"]
   insteadOf = "git://github.com/HugeThoughts/"
 [core]

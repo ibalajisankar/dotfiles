@@ -1,84 +1,106 @@
-# Set default editors
-export EDITOR="vim"
-export VISUAL="subl"
-
-# Easier navigation: .., ..., ~ and -
-alias ..="cd .."
-alias ...="cd ../.."
-alias ~="cd ~" 
+# Navigation
+	alias ..="cd .."
+	alias ...="cd ../.."
+	alias ~="cd ~" 
 
 # Shortcuts
-alias db="cd ~/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias co="cd ~/Code"
-alias h="history"
-alias dot="cd ~/dotfiles"
-alias hts="cd ~/Code/HugeThoughts"
+	alias db="cd ~/Dropbox"
+	alias dl="cd ~/Downloads"
+	alias dt="cd ~/Desktop"
+	alias co="cd ~/Code"
+	alias h="history"
+	alias dot="cd ~/dotfiles"
+	alias hts="cd ~/Code/HugeThoughts"
 
 
 # Unix
-alias cls="clear"
-alias ll="ls -al"
-alias ln="ln -v"
-alias rmd="rm -rf"
-alias e="$EDITOR"
-alias v="$VISUAL"
+	alias cls="clear"
+	alias ll="ls -al"
+	alias ln="ln -v"
+	alias rmd="rm -rf"
+	alias e="$EDITOR"
+	alias v="$VISUAL"
 
+
+
+# Homebrew
+ 
+    if command -v 'brew' &> /dev/null; then
+        alias brewd='brew doctor'
+        alias brewi='brew install'
+        alias brewr='brew uninstall'
+        alias brews='brew search'
+		alias bci="brew cask install"
+        alias brewu='brew update \
+                      && brew upgrade --all \
+                      && brew cleanup \
+                      && brew cask cleanup'
+
+    fi
+
+# npm
+
+    if command -v 'npm' &> /dev/null; then
+		alias npmi="npm install"
+		alias npmig="npm install -g"
+		alias npmu="npm update"
+		alias npmr="npm uninstall"
+		alias npmrg="npm uninstall -g"
+		alias nom="rm -rf node_modules && npm cache clear && npm i"
+	fi
 
 # Rails
 
-alias b="bundle"
-alias rsb="rails s -b 0.0.0.0"
-alias rgm="rails generate model"
-alias rgc="rails generate controller"
-alias rgs="rails generate scaffold"
-alias rdm="rails destroy model"
-alias rdc="rails destroy controller"
-alias rds="rails destroy scaffold"
-alias rkdm="rake db:migrate"
+    if command -v 'rails' &> /dev/null; then
+		alias b="bundle"
+		alias rsb="rails s -b 0.0.0.0"
+		alias rgm="rails generate model"
+		alias rgc="rails generate controller"
+		alias rgs="rails generate scaffold"
+		alias rdm="rails destroy model"
+		alias rdc="rails destroy controller"
+		alias rds="rails destroy scaffold"
+		alias rkdm="rake db:migrate"
+	fi
 
+# Server Guick Starts                                             
 
+	alias bs="browser-sync start --server --files '**/*.html,**/*.css,**/*.js'"
+	alias live="live-server"
+	alias pys="python -m SimpleHTTPServer 8000"
+	alias phps="php -S localhost:8000"
 
-# npm
-alias npmi="npm install"
-alias npmig="npm install -g"
-alias npmu="npm update"
-alias npmr="npm uninstall"
-alias npmrg="npm uninstall -g"
-alias nom="rm -rf node_modules && npm cache clear && npm i"
+# Network                                             
+	
+	alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+	alias local-ip='ipconfig getifaddr en1'
 
+	
 
-# brew
-alias bci="brew cask install"
-alias bi="brew install"
-alias bd="brew doctor"
+# Custom
 
-# server guick starts
-alias bs="browser-sync start --server --files '**/*.html,**/*.css,**/*.js'"
-alias live="live-server"
-alias pys="python -m SimpleHTTPServer 8000"
-alias phps="php -S localhost:8000"
-
-
-# custom
-
-alias f='open -a Finder'
-alias .e="subl ~/dotfiles"
-alias dld="aria2c -x 10"
-alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Public key copied to clipboard.'"
-alias reload=". ~/.zshrc"
+	alias f='open -a Finder'
+	alias .e="subl ~/dotfiles"
+	alias dld="aria2c -x 10"
+	alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Public key copied to clipboard.'"
+	alias reload=". ~/.zshrc"
 
 # Pretty print the path
-alias path='echo $PATH | tr -s ":" "\n"'
+	
+	alias path='echo $PATH | tr -s ":" "\n"'
 
 
-# utils
+# Utility
 
-alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
-alias yt="youtube-dl"
+	alias yt="youtube-dl"
 
-# OSX specific
+
+
+
+# ----------------------------------------------------------------------
+# | System                                                            |
+# ----------------------------------------------------------------------
+
 
 alias mute="osascript -e 'set volume output muted true' > /dev/null" 
 alias unmute="osascript -e 'set volume output muted false' > /dev/null"
@@ -92,13 +114,23 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
-# Hide/show all desktop icons (useful when presenting)
+# Hide/show all desktop icons
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 
-# One of @janmoesen’s ProTip™s
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-	alias "$method"="lwp-request -m '$method'"
-done
+# Hide/Show hidden files in Finder
+alias hide-hidden-files='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
+alias show-hidden-files='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
 
+
+# Lock
+alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+
+alias update='sudo softwareupdate --install --all \
+                   && brew update \
+                   && brew upgrade --all \
+                   && brew cleanup \
+                   && npm install -g npm \
+                   && npm update -g'
