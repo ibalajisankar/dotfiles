@@ -73,7 +73,7 @@
 # Network                                             
 	
 	alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
-	alias local-ip='ipconfig getifaddr en1'
+	alias lip='ipconfig getifaddr en1'
 
 	
 
@@ -127,6 +127,9 @@ alias show-hidden-files='defaults write com.apple.finder AppleShowAllFiles -bool
 # Lock
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
+# Sleep Now
+
+alias sleepnow='pmset displaysleepnow'
 
 alias update='sudo softwareupdate --install --all \
                    && brew update \
