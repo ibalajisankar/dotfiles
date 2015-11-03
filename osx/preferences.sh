@@ -138,3 +138,7 @@ defaults write com.apple.dock autohide -bool true
 
 # Reduce clutter by minimizing windows into their application icons
 defaults write com.apple.dock minimize-to-application -bool true
+
+
+# Enable Debug menu in App store
+defaults write com.apple.appstore ShowDebugMenu -bool true
