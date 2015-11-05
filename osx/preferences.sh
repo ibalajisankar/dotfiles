@@ -24,9 +24,10 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Use list view in all Finder windows by default
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
-# Set "Desktop" as the default location for new Finder windows
 # defaults write com.apple.finder NewWindowTarget -string "PfDe"
-# defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+
+# Set "Document" as the default location for new Finder windows
+defaults write com.apple.finder NewWindowTargetPath -string "file://$HOME/Documents/"
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -107,7 +108,7 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Save screenshots to the Desktop
-# defaults write com.apple.screencapture location -string "$HOME/Desktop"
+defaults write com.apple.screencapture location -string "$HOME/Documents/Pictures/Screenshots"
 
 # Require password immediately after into sleep or screen saver mode 
 defaults write com.apple.screensaver askForPassword -int 1
