@@ -18,3 +18,6 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/git/gitignore ~/.gitignore
 ln -sf ~/dotfiles/.gemrc ~/.gemrc
+
+
+ln -sf $HOME/dotfiles/sublime-text/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets

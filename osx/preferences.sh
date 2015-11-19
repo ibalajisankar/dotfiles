@@ -66,7 +66,7 @@ defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
 # Use plain text mode for new documents
-defaults write com.apple.TextEdit RichText -
+defaults write com.apple.TextEdit RichText -int 0
 
 
 
@@ -143,3 +143,10 @@ defaults write com.apple.dock minimize-to-application -bool true
 
 # Enable Debug menu in App store
 defaults write com.apple.appstore ShowDebugMenu -bool true
+
+# Disable smart quotes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
