@@ -4,7 +4,7 @@ alias gca="git_commit_all"
 ## Git commands
 
 # Based on https://gist.github.com/codejets/519d3287229ed075a025
-
+alias gaa='git add . && git commit --amend'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias diff='git diff'
 alias branch='git branch'

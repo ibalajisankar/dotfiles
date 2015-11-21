@@ -1,3 +1,7 @@
+# Set default editors
+export EDITOR="vim"
+export VISUAL="subl"
+
 # Navigation
 	alias ..="cd .."
 	alias ...="cd ../.."
@@ -10,7 +14,6 @@
 	alias co="cd ~/Code"
 	alias h="history"
 	alias dot="cd ~/dotfiles"
-	alias hts="cd ~/Code/HugeThoughts"
 
 
 # Unix
@@ -43,6 +46,7 @@
     if command -v 'npm' &> /dev/null; then
 		alias npmi="npm install"
 		alias npmig="npm install -g"
+		alias npmd="npm install --save-dev"
 		alias npmu="npm update"
 		alias npmr="npm uninstall"
 		alias npmrg="npm uninstall -g"
