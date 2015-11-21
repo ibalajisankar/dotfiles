@@ -1,0 +1,14 @@
+[
+    {
+        "command": "toggle_side_bar",
+        "keys": [
+            "ctrl+s"
+        ]
+    },
+    {
+        "command": "side_bar_rename",
+        "keys": [
+            "f2"
+        ]
+    }
+]

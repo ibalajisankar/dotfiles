@@ -1,0 +1,30 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Better CoffeeScript",
+		"Bootstrap 3 Snippets",
+		"Color Highlighter",
+		"DocBlockr",
+		"Emmet",
+		"Gist",
+		"Git",
+		"GitGutter",
+		"Github Color Theme",
+		"GitHub Markdown Snippets",
+		"HTML-CSS-JS Prettify",
+		"Http Requester",
+		"jQuery",
+		"LiveStyle",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-csslint",
+		"SublimeLinter-jshint"
+	]
+}

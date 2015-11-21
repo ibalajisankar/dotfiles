@@ -1,0 +1,38 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Solarized (Dark) (SL).tmTheme",
+	"font_face": "Hack",
+	"font_size": 15,
+	// "bold_folder_labels": true,
+	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		".project",
+		".classpath",
+		"*.iml",
+		".DS_Store",
+		"*.orig"
+	],
+	"folder_exclude_patterns":
+	[
+		"target",
+		".git",
+		".settings",
+		".idea"
+	],
+	// "highlight_line": true,
+	"highlight_modified_tabs": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	
+
+
+	"ignored_packages":
+	[
+		"Better CoffeeScript",
+		"Bootstrap 3 Snippets",
+		"DocBlockr",
+		"Http Requester",
+		"Nettuts+ Fetch"
+	]
+}
