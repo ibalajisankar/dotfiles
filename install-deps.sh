@@ -30,3 +30,9 @@ npm_packages=(
 	)
 sudo npm install -g ${npm_packages[@]} 
 
+# Install Package Control for Sublime Text 3
+PKG_CTRL_FILE="$HOME/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package"
+[ ! -f "$PKG_CTRL_FILE" ] && curl -o "$PKG_CTRL_FILE" \
+  "https://sublime.wbond.net/Package Control.sublime-package"
+
+unset PKG_CTRL_FILE
