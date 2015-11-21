@@ -21,3 +21,6 @@ ln -sf ~/dotfiles/.gemrc ~/.gemrc
 
 
 ln -sf $HOME/dotfiles/sublime-text/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets
+
+sudo rmdir -r $HOME/Library/Fonts
+ln -sf $HOME/dotfiles/osx/fonts $HOME/Library/Fonts
