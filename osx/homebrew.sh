@@ -53,6 +53,16 @@ brew cask install ${usefull_cask[@]}
 
 brew install git imagemagick heroku-toolbelt node mysql dnsmasq
 
+# if test ! "$(which rbenv)"; then
+#   echo "  Installing rbenv for you."
+#   brew install rbenv > /tmp/rbenv-install.log
+# fi
+
+# if test ! "$(which ruby-build)"; then
+#   echo "  Installing ruby-build for you."
+#   brew install ruby-build > /tmp/ruby-build-install.log
+# fi
+
 brew cask install sublime-text3 sequel-pro virtualbox gitx
 
    
@@ -61,7 +71,7 @@ brew cask install evernote todoist  skype slack telegram limechat\
 	 kindle dropbox flux rescuetime miro-video-converter
 
 # browser
-brew cask install google-chrome torbrowser google-chrome-canary
+brew cask install google-chrome torbrowser google-chrome-canary firefox
 
 
 # watch and download stuff
