@@ -119,8 +119,8 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Hide/show all desktop icons
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias hide-dt="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias show-dt="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 
 # Hide/Show hidden files in Finder

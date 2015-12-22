@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+/*
+* ${1:Project Name}
+* Ashik Nesin (mail@ashiknesin.com)
+* ${2:Date}
+*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Spacing
+- Media Queries
+*/
+
+/* ${3:Title}
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>`csstoc</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

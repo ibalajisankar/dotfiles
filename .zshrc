@@ -22,13 +22,13 @@ source $ZSH/oh-my-zsh.sh
 # [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
 
 # shell
-source ~/dotfiles/shell/aliases
-source ~/dotfiles/shell/functions
+source ~/dotfiles/shell/aliases.sh
+source ~/dotfiles/shell/functions.sh
 
 # git
 
-source ~/dotfiles/git/functions
-source ~/dotfiles/git/aliases
+source ~/dotfiles/git/functions.sh
+source ~/dotfiles/git/aliases.sh
 
 # utils
 

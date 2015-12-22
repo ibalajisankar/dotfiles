@@ -25,9 +25,9 @@ npm_packages=(
 
 	# Others
 	live-server
-	
-	
+
 	)
+
 sudo npm install -g ${npm_packages[@]} 
 
 # Install Package Control for Sublime Text 3

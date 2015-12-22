@@ -28,8 +28,8 @@ usefull_pkg=(
 	wget
 	unrar
 	ffmpeg
-	terminal-notifier
-	vim
+	#terminal-notifier
+	#vim
 )
 
 usefull_cask=(

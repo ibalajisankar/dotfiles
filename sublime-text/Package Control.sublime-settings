@@ -6,9 +6,12 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"AutoFileName",
 		"Better CoffeeScript",
 		"Bootstrap 3 Snippets",
+		"BracketHighlighter",
 		"Color Highlighter",
+		"ColorPicker",
 		"DocBlockr",
 		"Emmet",
 		"Gist",
@@ -16,15 +19,18 @@
 		"GitGutter",
 		"Github Color Theme",
 		"GitHub Markdown Snippets",
+		"Gulp",
 		"HTML-CSS-JS Prettify",
 		"Http Requester",
 		"jQuery",
 		"LiveStyle",
+		"Markdown Extended",
 		"Nettuts+ Fetch",
 		"Package Control",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
-		"SublimeLinter-jshint"
+		"SublimeLinter-jshint",
+		"Theme - Soda"
 	]
 }

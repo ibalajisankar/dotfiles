@@ -1,10 +1,6 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/Solarized (Dark) (SL).tmTheme",
-	"font_face": "Hack",
-	"font_size": 15,
-	// "bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Soda (SL).tmTheme",
 	"default_line_ending": "unix",
-	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		".project",
@@ -20,19 +16,21 @@
 		".settings",
 		".idea"
 	],
-	// "highlight_line": true,
+	"font_face": "Menlo",
+	"font_size": 15,
 	"highlight_modified_tabs": true,
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
-	
-
-
 	"ignored_packages":
 	[
+		"AutoFileName",
 		"Better CoffeeScript",
 		"Bootstrap 3 Snippets",
+		"ColorPicker",
 		"DocBlockr",
 		"Http Requester",
 		"Nettuts+ Fetch"
-	]
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"soda_folder_icons": true,
+	"theme": "Soda Dark 3.sublime-theme"
 }
