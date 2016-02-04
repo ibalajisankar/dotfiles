@@ -23,6 +23,9 @@ npm_packages=(
 	# Linting
 	jshint
 
+	#Coding Standards
+	jscs
+
 	# Others
 	live-server
 
@@ -36,3 +39,10 @@ PKG_CTRL_FILE="$HOME/Library/Application Support/Sublime Text 3/Installed Packag
   "https://sublime.wbond.net/Package Control.sublime-package"
 
 unset PKG_CTRL_FILE
+
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
+chmod +x wp-cli.phar
+
+sudo mv wp-cli.phar /usr/local/bin/wp
+

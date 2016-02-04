@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/Monokai Soda (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"default_line_ending": "unix",
 	"file_exclude_patterns":
 	[
@@ -14,15 +14,17 @@
 		"target",
 		".git",
 		".settings",
-		".idea"
+		".idea",
+		"node_modules",
+		"bin"
 	],
 	"font_face": "Menlo",
-	"font_size": 15,
+	"font_size": 16,
+	"ha_style": "filled",
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"AutoFileName",
-		"Better CoffeeScript",
 		"Bootstrap 3 Snippets",
 		"ColorPicker",
 		"DocBlockr",
@@ -31,6 +33,5 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"soda_folder_icons": true,
 	"theme": "Soda Dark 3.sublime-theme"
 }
