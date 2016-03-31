@@ -14,6 +14,7 @@ curl -L https://get.rvm.io | bash -s stable --rails
 npm_packages=(
 	yo
 	express-generator
+	jade
 	
 	# gulp & its related packages
 	gulp
@@ -28,6 +29,13 @@ npm_packages=(
 
 	# Others
 	live-server
+
+	babel-cli
+	babel-preset-es2015
+	psi # Google Page Speed
+	express
+	json-server
+	deployd
 
 	)
 

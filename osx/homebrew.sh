@@ -30,6 +30,9 @@ usefull_pkg=(
 	ffmpeg
 	#terminal-notifier
 	#vim
+	trash
+	cmus
+	mycli
 )
 
 usefull_cask=(
@@ -41,7 +44,8 @@ usefull_cask=(
 	caffeine
 	spectacle
 	imageoptim
-	
+	teamviewer
+
 
 )
 
@@ -65,7 +69,7 @@ brew install git imagemagick heroku-toolbelt node mysql dnsmasq
 
 brew cask install sublime-text3 sequel-pro virtualbox gitx
 
-   
+
 # chat, books, notes, documents, mail, etc
 brew cask install evernote todoist  skype slack telegram limechat\
 	 kindle dropbox flux rescuetime miro-video-converter
@@ -76,7 +80,7 @@ brew cask install google-chrome torbrowser google-chrome-canary firefox
 
 # watch and download stuff
 brew install youtube-dl aria2
-brew cask install vlc vox utorrent   
+brew cask install vlc vox utorrent
 
 # quick look plugins - https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \

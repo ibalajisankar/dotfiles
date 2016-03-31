@@ -45,7 +45,7 @@ export VISUAL="subl"
 
     if command -v 'npm' &> /dev/null; then
 		alias npmi="npm install"
-		alias npmig="npm install -g"
+		alias npmg="npm install -g"
 		alias npmd="npm install --save-dev"
 		alias npmu="npm update"
 		alias npmr="npm uninstall"
@@ -88,6 +88,9 @@ export VISUAL="subl"
 	alias dld="aria2c -x 10"
 	alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Public key copied to clipboard.'"
 	alias reload=". ~/.zshrc"
+	alias brc="echo '{ \"presets\": [\"es2015\"] }' > .babelrc"
+
+
 
 # Pretty print the path
 	
@@ -141,3 +144,4 @@ alias update='sudo softwareupdate --install --all \
                    && brew cleanup \
                    && npm install -g npm \
                    && npm update -g'
+
