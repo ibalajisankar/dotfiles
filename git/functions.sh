@@ -4,7 +4,7 @@
 # Based on https://github.com/stephenplusplus/dots/blob/master/.bash_profile#L68 by @stephenplusplus
 #
 # Note: subl is already setup as a shortcut to Sublime. Replace with your own editor if different
-# 
+#
 # - arg 1 - url|username|repo remote endpoint, username on github, or name of
 #           repository.
 # - arg 2 - (optional) name of repo
@@ -26,8 +26,8 @@
 #     .. subl .
 
 function clone {
-  # customize username to your own 
-  local username="hugethoughts"
+  # customize username to your own
+  local username="ashiknesin"
 
   local url=$1;
   local repo=$2;
@@ -60,7 +60,7 @@ function g() {
         if [ $# -eq 0 ]; then
                 git status
         else
-                
+
                 git "$@"
         fi
 }

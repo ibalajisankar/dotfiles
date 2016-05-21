@@ -28,8 +28,6 @@ usefull_pkg=(
 	wget
 	unrar
 	ffmpeg
-	#terminal-notifier
-	#vim
 	trash
 	cmus
 	mycli
@@ -38,15 +36,11 @@ usefull_pkg=(
 usefull_cask=(
 	iterm2
 	the-unarchiver
-	disk-inventory-x
-	appcleaner
 	diffmerge
 	caffeine
 	spectacle
 	imageoptim
 	teamviewer
-
-
 )
 
 brew install ${usefull_pkg[@]}
@@ -71,11 +65,11 @@ brew cask install sublime-text3 sequel-pro virtualbox gitx
 
 
 # chat, books, notes, documents, mail, etc
-brew cask install evernote todoist  skype slack telegram limechat\
+brew cask install evernote skype slack limechat\
 	 kindle dropbox flux rescuetime miro-video-converter
 
 # browser
-brew cask install google-chrome torbrowser google-chrome-canary firefox
+brew cask install torbrowser google-chrome-canary firefox
 
 
 # watch and download stuff

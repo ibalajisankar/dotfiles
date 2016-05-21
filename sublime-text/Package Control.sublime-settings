@@ -12,8 +12,10 @@
 		"BracketHighlighter",
 		"Color Highlighter",
 		"Emmet",
+		"Emmet Css Snippets",
+		"Flask Completions",
+		"Flask Starter",
 		"GitGutter",
-		"Github Color Theme",
 		"GitHub Markdown Snippets",
 		"Hayaku - tools for writing CSS faster",
 		"HTML-CSS-JS Prettify",
@@ -25,7 +27,6 @@
 		"Local History",
 		"Markdown Extended",
 		"Material Theme",
-		"One Dark Material - Theme",
 		"Package Control",
 		"Require CommonJS Modules Helper",
 		"Sass",
@@ -36,8 +37,6 @@
 		"SublimeLinter",
 		"SublimeLinter-csslint",
 		"SublimeLinter-jshint",
-		"Theme - Soda",
-		"Theme - Spacegray",
 		"Unsplash"
 	],
 	"repositories":

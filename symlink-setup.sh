@@ -26,6 +26,7 @@ ln -sf $HOME/dotfiles/sublime-text/Package\ Control.sublime-settings $HOME/Libra
 ln -sf $HOME/dotfiles/sublime-text/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 
 
+# $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 
 # Make sure to move Sublime Text to Application directory

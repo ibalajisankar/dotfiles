@@ -5,7 +5,7 @@ export VISUAL="subl"
 # Navigation
 	alias ..="cd .."
 	alias ...="cd ../.."
-	alias ~="cd ~" 
+	alias ~="cd ~"
 
 # Shortcuts
 	alias db="cd ~/Dropbox"
@@ -27,7 +27,7 @@ export VISUAL="subl"
 
 
 # Homebrew
- 
+
     if command -v 'brew' &> /dev/null; then
         alias brewd='brew doctor'
         alias brewi='brew install'
@@ -67,39 +67,49 @@ export VISUAL="subl"
 		alias rkdm="rake db:migrate"
 	fi
 
-# Server Guick Starts                                             
+# Server Guick Starts
 
 	alias bs="browser-sync start --server --files '**/*.html,**/*.css,**/*.js'"
 	alias live="live-server"
 	alias pys="python -m SimpleHTTPServer 8000"
 	alias phps="php -S localhost:8000"
 
-# Network                                             
-	
+# Network
+
 	alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 	alias lip='ipconfig getifaddr en1'
 
-	
+
 
 # Custom
-
+	alias py='python'
 	alias f='open -a Finder'
 	alias .e="subl ~/dotfiles"
 	alias dld="aria2c -x 10"
 	alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Public key copied to clipboard.'"
 	alias reload=". ~/.zshrc"
 	alias brc="echo '{ \"presets\": [\"es2015\"] }' > .babelrc"
+	alias rm='trash'
 
 
 
 # Pretty print the path
-	
+
 	alias path='echo $PATH | tr -s ":" "\n"'
 
 
 # Utility
 
 	alias yt="youtube-dl"
+
+## Download mp3 audio from Youbtube (need youtube-dl first)
+function get-audio() {
+  if [ $# -eq 0 ]; then
+      print "Oops. Please enter a url: get-audio <youtube-link>"
+  else
+    youtube-dl --extract-audio --audio-format mp3 $1
+  fi
+}
 
 
 
@@ -109,7 +119,7 @@ export VISUAL="subl"
 # ----------------------------------------------------------------------
 
 
-alias mute="osascript -e 'set volume output muted true' > /dev/null" 
+alias mute="osascript -e 'set volume output muted true' > /dev/null"
 alias unmute="osascript -e 'set volume output muted false' > /dev/null"
 
 
@@ -122,8 +132,8 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Hide/show all desktop icons
-alias hide-dt="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias show-dt="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias dt-hide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias dt-show="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 
 # Hide/Show hidden files in Finder
