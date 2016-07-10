@@ -1,6 +1,6 @@
 unalias gca >/dev/null 2>/dev/null #remove oh-my-zsh git plugin alias
 alias gca="git_commit_all"
-
+alias gcd1="git clone --depth=1"
 ## Git commands
 
 # Based on https://gist.github.com/codejets/519d3287229ed075a025

@@ -24,7 +24,6 @@ usefull_pkg=(
 	bash
 	zsh
 	coreutils
-	ack
 	wget
 	unrar
 	ffmpeg

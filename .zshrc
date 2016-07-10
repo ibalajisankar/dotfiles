@@ -27,7 +27,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 # shell
 source ~/dotfiles/shell/aliases.sh
 source ~/dotfiles/shell/functions.sh
-
+eval $(thefuck --alias)
 # git
 
 source ~/dotfiles/git/functions.sh
@@ -37,4 +37,6 @@ source ~/dotfiles/git/aliases.sh
 
 source ~/dotfiles/utils/z/z.sh
 
+# others
+source ~/.profile
 

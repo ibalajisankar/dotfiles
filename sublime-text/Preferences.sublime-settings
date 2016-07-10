@@ -28,7 +28,9 @@
 		"node_modules",
 		"bin",
 		"dist",
-		"docs"
+		"docs",
+		".tmp",
+		"e2e"
 	],
 	"font_face": "Source Code Pro",
 	"font_options":
