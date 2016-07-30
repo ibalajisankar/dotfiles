@@ -30,6 +30,9 @@ usefull_pkg=(
 	trash
 	cmus
 	mycli
+	go
+	asciinema
+	mysql
 )
 
 usefull_cask=(
@@ -84,6 +87,9 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
 brew tap caskroom/fonts
 brew cask install font-hack font-source-code-pro
 
+# Config
+brew services start mysql
+brew services start mongodb
 # clean things up
 brew cleanup
 brew cask cleanup

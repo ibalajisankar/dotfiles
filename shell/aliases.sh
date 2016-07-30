@@ -46,7 +46,7 @@ export VISUAL="subl"
     if command -v 'npm' &> /dev/null; then
 		alias npmi="npm install"
 		alias npmg="npm install -g"
-		alias npmd="npm install --save-dev"
+		alias npmid="npm install --save-dev"
 		alias npmu="npm update"
 		alias npmr="npm uninstall"
 		alias npmrg="npm uninstall -g"
@@ -90,6 +90,7 @@ export VISUAL="subl"
 	alias reload=". ~/.zshrc"
 	alias brc="echo '{ \"presets\": [\"es2015\"] }' > .babelrc"
 	alias rm='trash'
+	alias it='itunes-remote'
 
 
 
@@ -101,16 +102,7 @@ export VISUAL="subl"
 # Utility
 
 	alias yt="youtube-dl"
-
-## Download mp3 audio from Youbtube (need youtube-dl first)
-function get-audio() {
-  if [ $# -eq 0 ]; then
-      print "Oops. Please enter a url: get-audio <youtube-link>"
-  else
-    youtube-dl --extract-audio --audio-format mp3 $1
-  fi
-}
-
+	alias yta="get-audio"
 
 
 

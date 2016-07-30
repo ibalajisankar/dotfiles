@@ -15,7 +15,7 @@ npm_packages=(
 	yo
 	express-generator
 	jade
-	
+
 	# gulp & its related packages
 	gulp
 	generator-webapp
@@ -36,10 +36,12 @@ npm_packages=(
 	express
 	json-server
 	deployd
+	itunes-remote
+	fast-cli
 
 	)
 
-sudo npm install -g ${npm_packages[@]} 
+sudo npm install -g ${npm_packages[@]}
 
 # Install Package Control for Sublime Text 3
 PKG_CTRL_FILE="$HOME/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package"
@@ -54,3 +56,4 @@ chmod +x wp-cli.phar
 
 sudo mv wp-cli.phar /usr/local/bin/wp
 
+mkdir ~/go

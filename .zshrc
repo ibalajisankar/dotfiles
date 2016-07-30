@@ -23,6 +23,10 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/mysql/bin:$PATH"
 
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=~/go
+
+
 
 # shell
 source ~/dotfiles/shell/aliases.sh

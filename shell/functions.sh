@@ -1,3 +1,12 @@
+## Download mp3 audio from Youbtube (need youtube-dl first)
+function get-audio() {
+  if [ $# -eq 0 ]; then
+      print "Oops. Please enter a url: get-audio <youtube-link>"
+  else
+    youtube-dl --extract-audio --audio-format mp3 $1
+  fi
+}
+
 # Create a new directory and enter it
 function md() {
 	mkdir -p "$@" && cd "$@"
