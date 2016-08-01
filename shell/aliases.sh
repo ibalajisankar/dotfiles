@@ -91,6 +91,7 @@ export VISUAL="subl"
 	alias brc="echo '{ \"presets\": [\"es2015\"] }' > .babelrc"
 	alias rm='trash'
 	alias it='itunes-remote'
+	alias simpleWeb="git clone --depth=1 file:///Users/AshikNesin/Code/starter-kits/simpleWeb"
 
 
 
