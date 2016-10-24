@@ -38,6 +38,7 @@ npm_packages=(
 	deployd
 	itunes-remote
 	fast-cli
+	local-npm
 
 	)
 
@@ -57,3 +58,5 @@ chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
 
 mkdir ~/go
+
+npm set registry http://127.0.0.1:5080

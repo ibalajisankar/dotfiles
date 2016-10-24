@@ -17,6 +17,7 @@ alias gmm='git merge master'
 alias gmghp='git merge gh-pages'
 alias recent='git for-each-ref --sort=-committerdate refs/heads/'
 alias branch_new="git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)'"
+alias gita="git add . && git commit -a --amend"
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"

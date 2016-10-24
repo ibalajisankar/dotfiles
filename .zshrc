@@ -24,6 +24,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/mysql/bin:$PATH"
 
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=/Applications/MAMP/bin/php/php7.0.8/bin:$PATH
+
 export GOPATH=~/go
 
 
