@@ -1,5 +1,9 @@
 {
 	"bootstrapped": true,
+	"channels":
+	[
+		"https://packagecontrol.io/channel_v3.json"
+	],
 	"in_process_packages":
 	[
 	],
@@ -8,6 +12,7 @@
 		"AdvancedNewFile",
 		"Alignment",
 		"AngularJS",
+		"ApacheConf.tmLanguage",
 		"AutoFileName",
 		"Babel",
 		"BracketHighlighter",

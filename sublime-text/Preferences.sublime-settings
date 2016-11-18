@@ -19,7 +19,8 @@
 		"*.iml",
 		".DS_Store",
 		"*.orig",
-		"*.log*"
+		"*.log*",
+		"*.data"
 	],
 	"folder_exclude_patterns":
 	[
@@ -46,6 +47,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"AngularJS",
+		"jQuery",
 		"SublimeLinter-contrib-sass-lint",
 		"SublimeLinter-csslint",
 		"SublimeLinter-jshint"
