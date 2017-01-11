@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+export const ${1:CONSTANT}_REQUEST = '${1:CONSTANT}_REQUEST'
+export const ${1:CONSTANT}_SUCCESS = '${1:CONSTANT}_SUCCESS'
+export const ${1:CONSTANT}_FAILURE = '${1:CONSTANT}_FAILURE'
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cst</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

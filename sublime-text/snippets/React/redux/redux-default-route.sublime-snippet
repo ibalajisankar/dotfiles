@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+import { injectReducer } from '../../store/reducers'
+
+export default(store) => ({
+  path : '${1:custom-path}',
+  getComponent (nextState, cb) {
+    require.ensure([], (require) => {
+
+      const ${2:ContainerName} = require('./containers/${2:ContainerName}').default
+      const reducer = require('./modules/${3}').default
+
+      injectReducer(store, { key: '${4:storeKeyName}', reducer })
+
+      cb(null, ${2:ContainerName})
+
+    }, '${2:custom}')
+  },
+  getChildRoutes(location, cb) {
+    require.ensure([], (require) => {
+        cb(null, [
+            //ChildRoute(store),
+        ])
+    })
+}
+})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rdrt</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

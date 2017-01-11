@@ -43,6 +43,8 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Show Hidden Files
 defaults write com.apple.finder AppleShowAllFiles YES
+# Removing the Open Warning from All Files in a Directory
+xattr -d -r com.apple.quarantine ~/Downloads
 
 
 # ----------------------------------------------------------------------
@@ -108,9 +110,9 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Save screenshots to the Desktop
-defaults write com.apple.screencapture location -string "$HOME/Documents/Pictures/Screenshots"
+defaults write com.apple.screencapture location -string "$HOME/Dropbox/Screenshots"
 
-# Require password immediately after into sleep or screen saver mode 
+# Require password immediately after into sleep or screen saver mode
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
@@ -132,7 +134,7 @@ sudo systemsetup -setrestartfreeze on
 # Turn Bluetooth off
 sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist ControllerPowerState 0
 sudo launchctl unload /System/Library/LaunchDaemons/com.apple.blued.plist
-sudo launchctl load /System/Library/LaunchDaemons/com.apple.blued.plist 
+sudo launchctl load /System/Library/LaunchDaemons/com.apple.blued.plist
 
 # Automatically hide/show the Dock
 defaults write com.apple.dock autohide -bool true

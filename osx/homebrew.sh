@@ -33,6 +33,7 @@ usefull_pkg=(
 	go
 	asciinema
 	mysql
+	http://git.io/sshpass.rb
 )
 
 usefull_cask=(

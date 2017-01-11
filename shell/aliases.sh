@@ -103,7 +103,7 @@ export VISUAL="subl"
 # Utility
 
 	alias yt="youtube-dl"
-	alias yta="get-audio"
+	alias geta="get-audio"
 
 
 

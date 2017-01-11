@@ -76,6 +76,7 @@
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": false,
 	"smart_indent": true,
+	"spacegray_fileicons": true,
 	"tab_completion": true,
 	"tab_size": 4,
 	"theme": "Material-Theme.sublime-theme",

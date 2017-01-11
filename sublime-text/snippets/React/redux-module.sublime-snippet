@@ -1,0 +1,75 @@
+<snippet>
+	<content><![CDATA[
+import { API_ROOT } from 'constants';
+import {get, post } from 'axios';
+import {statusIsSuccess} from 'utils/request'
+//import { push } from 'react-router-redux'
+
+// ------------------------------------
+// Constants
+// ------------------------------------
+export const ${1:CONSTANT}_REQUEST = '${1:CONSTANT}_REQUEST'
+export const ${1:CONSTANT}_SUCCESS = '${1:CONSTANT}_SUCCESS'
+export const ${1:CONSTANT}_FAILURE = '${1:CONSTANT}_FAILURE'
+
+// ------------------------------------
+// Actions
+// ------------------------------------
+export const ${2:actionName} = (data) => {
+    return (dispatch, getState) => {
+            const url = `\${API_ROOT}/endpoint`;
+            dispatch({type: ${1:CONSTANT}_REQUEST})
+            const request = post(url,data).then((response) => {
+                    dispatch({
+                        type: ${1:CONSTANT}_SUCCESS,
+                        payload: response.data
+                    })
+
+            })
+            .catch((err) => {
+                    dispatch({
+                        type: ${1:CONSTANT}_FAILURE,
+                        payload: response.data
+                    })
+            });
+    }
+}
+
+export const actions = {
+  ${2:actionName}
+}
+
+// ------------------------------------
+// Action Handlers
+// ------------------------------------
+const ACTION_HANDLERS = {
+    [${1:CONSTANT}_REQUEST]: (state, action) => {
+        return {...state, loading: true,errorMsg:null }
+    },
+    [${1:CONSTANT}_SUCCESS]: (state, action) => {
+        return {...state, loading: false,errorMsg:null }
+    },
+    [${1:CONSTANT}_FAILURE]: (state, action) => {
+        const errorMsg = action.payload.message || 'Something went wrong!'
+        return {...state, loading: false, errorMsg  }
+    }
+}
+
+// ------------------------------------
+// Reducer
+// ------------------------------------
+const initialState = {
+    loading:false,
+    errorMsg:null
+}
+export default function counterReducer (state = initialState, action) {
+  const handler = ACTION_HANDLERS[action.type]
+  return handler ? handler(state, action) : state
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rmodule</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

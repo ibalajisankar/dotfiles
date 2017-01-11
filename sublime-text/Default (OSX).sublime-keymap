@@ -6,6 +6,9 @@
         ]
     },
     {
+        "keys": ["ctrl+f"], "command": "esformatter"
+    },
+    {
         "command": "side_bar_rename",
         "keys": [
             "f2"

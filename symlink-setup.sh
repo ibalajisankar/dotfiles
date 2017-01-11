@@ -20,6 +20,10 @@ ln -sf ~/dotfiles/git/.gitignore ~/.gitignore
 ln -sf ~/dotfiles/.gemrc ~/.gemrc
 
 
+ln -sf ~/dotfiles/shell/local-bin/ssh.sh /usr/local/bin/ssh.sh
+
+
+
 ln -sf $HOME/dotfiles/sublime-text/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets
 ln -sf $HOME/dotfiles/sublime-text/Default\ \(OSX\).sublime-keymap $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
 ln -sf $HOME/dotfiles/sublime-text/Package\ Control.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings

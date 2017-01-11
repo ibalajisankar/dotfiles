@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+import React from 'react';
+
+const ${1:Hello} = () => (
+ <div>
+ 	<h1>${1:Hello} Component</h1>
+ </div>
+);
+
+export default ${1:Hello};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rslc</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

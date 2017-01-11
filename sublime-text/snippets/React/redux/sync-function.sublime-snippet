@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+export const ${1:functionName} = (${2:params}) => {
+    return (dispatch, getState) => {
+        dispatch({
+            type: ${3:SOME_ACTION_CONSTANT},
+            payload: PAYLOAD_DATA
+        })
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rsf</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
