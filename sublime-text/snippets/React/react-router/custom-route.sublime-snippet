@@ -17,7 +17,8 @@ export const ${1:custom}Route = (store) => ({
 })
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>drt</tabTrigger>
+  <tabTrigger>drt</tabTrigger>
+	<tabTrigger>r2cr</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

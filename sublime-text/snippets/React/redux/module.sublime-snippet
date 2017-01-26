@@ -2,7 +2,6 @@
 	<content><![CDATA[
 import { API_ROOT } from 'constants';
 import {get, post } from 'axios';
-import {statusIsSuccess} from 'utils/request'
 //import { push } from 'react-router-redux'
 
 // ------------------------------------
@@ -29,7 +28,7 @@ export const ${2:actionName} = (data) => {
             .catch((err) => {
                     dispatch({
                         type: ${1:CONSTANT}_FAILURE,
-                        payload: response.data
+                        payload: err.response.data
                     })
             });
     }
@@ -52,7 +51,7 @@ const ACTION_HANDLERS = {
     [${1:CONSTANT}_FAILURE]: (state, action) => {
         const errorMsg = action.payload.message || 'Something went wrong!'
         return {...state, loading: false, errorMsg  }
-    }
+    },
 }
 
 // ------------------------------------
@@ -69,7 +68,8 @@ export default function counterReducer (state = initialState, action) {
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>rmodule</tabTrigger>
+    <tabTrigger>rmodule</tabTrigger>
+	<tabTrigger>rmod</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

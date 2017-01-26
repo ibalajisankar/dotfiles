@@ -49,6 +49,7 @@
 	[
 		"AngularJS",
 		"jQuery",
+		"React Templates",
 		"SublimeLinter-contrib-sass-lint",
 		"SublimeLinter-csslint",
 		"SublimeLinter-jshint"

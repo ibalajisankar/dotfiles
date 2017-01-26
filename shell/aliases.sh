@@ -93,7 +93,11 @@ export VISUAL="subl"
 	alias it='itunes-remote'
 	alias simpleWeb="git clone --depth=1 file:///Users/AshikNesin/Code/starter-kits/simpleWeb"
 
-
+# Services
+	alias stms='brew services start mysql'
+	alias spms='brew services stop mysql'
+	alias stmg='brew services start mongodb'
+	alias spmg='brew services stop mongodb'
 
 # Pretty print the path
 
@@ -104,8 +108,6 @@ export VISUAL="subl"
 
 	alias yt="youtube-dl"
 	alias geta="get-audio"
-
-
 
 # ----------------------------------------------------------------------
 # | System                                                            |

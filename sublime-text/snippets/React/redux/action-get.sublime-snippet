@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+export const ${1:functionName} = (${2:formData}) => {
+    return (dispatch, getState) => {
+
+            const queryString = '&limit=10'
+            const url = `\${API_ROOT}/${3:ENDPOINT}`;
+            dispatch({type: ${4:CONSTANT}_REQUEST})
+            const request = get(url).then((response) => {
+                    dispatch({
+                        type: ${4:CONSTANT}_SUCCESS,
+                        payload: response.data
+                    })
+            })
+            .catch((err) => {
+                dispatch({
+                        type: ${4:CONSTANT}_FAILURE,
+                        payload: err.response.data
+                    })
+            });
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fnget</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

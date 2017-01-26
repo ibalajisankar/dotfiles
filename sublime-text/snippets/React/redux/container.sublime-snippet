@@ -1,23 +1,24 @@
 <snippet>
 	<content><![CDATA[
 import { connect } from 'react-redux';
-//import { increment, doubleAsync } from '../modules/${2:counter}'
+//import {  } from '../modules/${TM_FILENAME/(.*).](.*)/$1/g}'
 
 import ${1:Counter} from '../components/${1:Counter}'
 
 const mapDispatchToProps = {
-  //increment : () => increment(1),
-  //doubleAsync
+  //fetchSomething : (id) => fetchSomething(id),
+  //addSomething : (formData)=>addSomething(formData),
 }
 
 const mapStateToProps = (state) => ({
-  //counter : state.counter
+  role : state.auth.role,
 })
 export default connect(mapStateToProps, mapDispatchToProps)(${1:Counter})
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>rcontainer</tabTrigger>
+	<tabTrigger>rcon</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
