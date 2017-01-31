@@ -56,6 +56,11 @@ function git_commit_all() {
 
 }
 
+function git_commit_all_push() {
+ git add .
+ git commit -a -m "$1"
+ push
+}
 function g() {
         if [ $# -eq 0 ]; then
                 git status
