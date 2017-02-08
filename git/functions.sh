@@ -57,9 +57,7 @@ function git_commit_all() {
 }
 
 function git_commit_all_push() {
- git add .
- git commit -a -m "$1"
- push
+ git_commit_all && git push
 }
 function g() {
         if [ $# -eq 0 ]; then

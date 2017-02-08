@@ -1,0 +1,2 @@
+alias rt="service apache2 restart"
+alias sshper="chmod 400 ~/.ssh/id_rsa"

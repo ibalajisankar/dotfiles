@@ -46,3 +46,9 @@ source ~/dotfiles/utils/z/z.sh
 # others
 source ~/.profile
 
+
+### Bashhub.com Installation
+if [ -f ~/.bashhub/bashhub.zsh ]; then
+    source ~/.bashhub/bashhub.zsh
+fi
+
