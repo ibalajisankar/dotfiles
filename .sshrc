@@ -1,2 +1,2 @@
-alias rt="service apache2 restart"
+alias rt="sudo apachectl restart"
 alias sshper="chmod 400 ~/.ssh/id_rsa"

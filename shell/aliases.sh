@@ -42,7 +42,6 @@ export VISUAL="subl"
     fi
 
 # npm
-
     if command -v 'npm' &> /dev/null; then
 		alias npmi="npm install"
 		alias npmg="npm install -g"
