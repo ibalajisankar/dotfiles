@@ -1,2 +1,5 @@
 alias rt="sudo apachectl restart"
 alias sshper="chmod 400 ~/.ssh/id_rsa"
+alias zip="tar -cvzf"
+alias unzip="tar -xvzf"
+alias apacheworld="chown -R www-data:www-data"

@@ -30,3 +30,5 @@ alias grmb="git push origin --delete"
 
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+
+alias ginit='git init && gi osx,node && gca "Init Commit"'

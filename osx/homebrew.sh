@@ -44,6 +44,7 @@ usefull_cask=(
 	spectacle
 	imageoptim
 	teamviewer
+	awareness
 )
 
 brew install ${usefull_pkg[@]}

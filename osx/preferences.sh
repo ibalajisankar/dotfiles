@@ -46,6 +46,18 @@ defaults write com.apple.finder AppleShowAllFiles YES
 # Removing the Open Warning from All Files in a Directory
 xattr -d -r com.apple.quarantine ~/Downloads
 
+# Show "Quit Finder" Menu Item & "Quit Finder" with default shortcut Cmd + Q
+defaults write com.apple.finder QuitMenuItem -bool true && \
+killall Finder
+
+# Disable Creation of Metadata Files on Network Volumes
+
+## Disable Creation of Metadata Files on Network Volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+## Disable Creation of Metadata Files on USB Volumes
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
 
 # ----------------------------------------------------------------------
 # | Terminal                                                            |
@@ -152,3 +164,14 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# iTunes Respond to Key Presses (Default)
+launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
+
+# Safari Enable Develop Menu and Web Inspector
+
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true && \
+defaults write com.apple.Safari IncludeDevelopMenu -bool true && \
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true && \
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true && \
+defaults write -g WebKitDeveloperExtras -bool true

@@ -25,3 +25,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/AshikNesin/dotfiles/git/.gitignore
+[http "https://git.7q6x.flynnhub.com"]
+	sslCAInfo = /Users/AshikNesin/.flynn/ca-certs/flynn-1488994027.pem
+[credential "https://git.7q6x.flynnhub.com"]
+	helper = /usr/local/bin/flynn git-credentials

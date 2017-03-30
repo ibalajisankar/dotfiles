@@ -76,7 +76,7 @@ export VISUAL="subl"
 # Network
 
 	alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
-	alias lip='ipconfig getifaddr en1'
+	alias lip='ipconfig getifaddr en0'
 
 
 
@@ -95,8 +95,8 @@ export VISUAL="subl"
 # Services
 	alias stms='brew services start mysql'
 	alias spms='brew services stop mysql'
-	alias stmg='brew services start mongodb'
-	alias spmg='brew services stop mongodb'
+	alias stmd='brew services start mongodb'
+	alias spmd='brew services stop mongodb'
 
 # Pretty print the path
 
@@ -148,4 +148,4 @@ alias update='sudo softwareupdate --install --all \
                    && brew cleanup \
                    && npm install -g npm \
                    && npm update -g'
-
+alias ssh="sshrc"
