@@ -28,6 +28,9 @@ alias gru="git remote set-url"
 alias undopush="git push -f origin HEAD^:master"
 alias grmb="git push origin --delete"
 
+# Git Flow
+alias gst="git flow feature start"
+alias gfn="git flow feature finish"
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
