@@ -6,6 +6,9 @@
         ]
     },
     {
+        "keys": ["ctrl+p"], "command": "js_prettier"
+    },
+    {
         "keys": ["ctrl+f"], "command": "esformatter"
     },
     {
