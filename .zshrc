@@ -33,7 +33,6 @@ export GOPATH=~/go
 # shell
 source ~/dotfiles/shell/aliases.sh
 source ~/dotfiles/shell/functions.sh
-eval $(thefuck --alias)
 # git
 
 source ~/dotfiles/git/functions.sh
@@ -45,6 +44,7 @@ source ~/dotfiles/utils/z/z.sh
 
 # others
 source ~/.profile
+source ~/.secrets
 
 
 ### Bashhub.com Installation
@@ -52,3 +52,6 @@ if [ -f ~/.bashhub/bashhub.zsh ]; then
     source ~/.bashhub/bashhub.zsh
 fi
 
+### Pure
+autoload -U promptinit; promptinit
+prompt pure

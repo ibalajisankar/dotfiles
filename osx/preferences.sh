@@ -1,3 +1,9 @@
+# https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+# Set computer name
+COMPUTERNAME="Ashik's MBP"
+HOSTNAME='Ashik-MBP'
+LOCALHOSTNAME='Ashik-MBP'
+
 
 # Sublime Text Symlink setup
 # ln -sf "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl

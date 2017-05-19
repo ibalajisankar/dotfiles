@@ -13,11 +13,13 @@ then
 fi
 
 ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.secrets ~/.secrets
 
 
 ln -sf ~/dotfiles/git/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/git/.gitignore ~/.gitignore
 ln -sf ~/dotfiles/.gemrc ~/.gemrc
+ln -sf ~/dotfiles/.sshrc ~/.sshrc
 
 
 ln -sf ~/dotfiles/shell/local-bin/ssh.sh /usr/local/bin/ssh.sh
@@ -34,7 +36,7 @@ ln -sf $HOME/dotfiles/sublime-text/ColorHighlighter.sublime-settings $HOME/Libra
 #  ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 # For DropShare to work
-ln -s `which ffmpeg` /usr/local/bin/ffmpeg-static
+# ln -s `which ffmpeg` /usr/local/bin/ffmpeg-static
 # Make sure to move Sublime Text to Application directory
 
 # Fix for MySQL gem.

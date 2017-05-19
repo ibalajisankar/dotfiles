@@ -6,15 +6,19 @@ alias gcd="git clone --depth=1"
 
 # Based on https://gist.github.com/codejets/519d3287229ed075a025
 alias gaa='git add . && git commit --amend'
-alias gc="git commit -m"
+# alias gc="git commit -m"
+alias gc="git checkout"
+alias gcm="git checkout master"
+alias gcb="git checkout -b"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias ga="git amend"
 alias diff='git diff'
-alias branch='git branch'
+alias br='git branch'
 alias st='git status'
 alias fetch='git fetch'
 alias push='git push origin'
 alias pull='git pull'
+alias gpu="git pull upstream master"
 alias fp='fetch && pull'
 alias gmm='git merge master'
 alias gmghp='git merge gh-pages'

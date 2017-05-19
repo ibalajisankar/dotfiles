@@ -20,6 +20,7 @@ npm_packages=(
 	gulp
 	generator-webapp
 	generator-gulp-webapp
+	generator-np
 
 	# Linting
 	jshint
@@ -39,7 +40,13 @@ npm_packages=(
 	itunes-remote
 	fast-cli
 	local-npm
-
+	egghead-downloader
+	chrome-webstore-upload-cli
+	surge
+	now
+	npm-name-cli
+	pure-prompt
+	prepack
 	)
 
 sudo npm install -g ${npm_packages[@]}
@@ -60,3 +67,5 @@ sudo mv wp-cli.phar /usr/local/bin/wp
 mkdir ~/go
 
 npm set registry http://127.0.0.1:5080
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

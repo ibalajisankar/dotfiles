@@ -19,6 +19,7 @@ export VISUAL="subl"
 # Unix
 	alias cls="clear"
 	alias ll="ls -al"
+	#alias ls="ls -a"
 	alias ln="ln -v"
 	alias rmd="rm -rf"
 	alias e="$EDITOR"
@@ -51,6 +52,7 @@ export VISUAL="subl"
 		alias npmrg="npm uninstall -g"
 		alias nom="rm -rf node_modules && npm cache clear && npm i"
 	fi
+	alias nn="npm-name"
 
 # Rails
 
