@@ -108,7 +108,7 @@ export VISUAL="subl"
 # Utility
 
 	alias yt="youtube-dl"
-	alias geta="get-audio"
+	alias ya="get-audio"
 
 # ----------------------------------------------------------------------
 # | System                                                            |
@@ -151,3 +151,4 @@ alias update='sudo softwareupdate --install --all \
                    && npm install -g npm \
                    && npm update -g'
 alias ssh="sshrc"
+alias rn="react-native"
