@@ -46,7 +46,7 @@ function clone {
     url="git@github.com:$url/$repo.git";
   fi
 
-  git clone $url $repo && cd $repo && subl .;
+  git clone $url $repo && cd $repo;
 }
 
 

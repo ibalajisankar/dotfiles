@@ -53,6 +53,8 @@ export VISUAL="subl"
 		alias nom="rm -rf node_modules && npm cache clear && npm i"
 	fi
 	alias nn="npm-name"
+	alias ns="npm start"
+	alias y="yarn add"
 
 # Rails
 
@@ -87,12 +89,14 @@ export VISUAL="subl"
 	alias f='open -a Finder'
 	alias .e="subl ~/dotfiles"
 	alias dld="aria2c -x 10"
+	alias gdl="gdrive download"
 	alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Public key copied to clipboard.'"
 	alias reload=". ~/.zshrc"
 	alias brc="echo '{ \"presets\": [\"es2015\"] }' > .babelrc"
 	alias rm='trash'
 	alias it='itunes-remote'
 	alias simpleWeb="git clone --depth=1 file:///Users/AshikNesin/Code/starter-kits/simpleWeb"
+	alias yd="yarn add -D"
 
 # Services
 	alias stms='brew services start mysql'
@@ -108,8 +112,8 @@ export VISUAL="subl"
 # Utility
 
 	alias yt="youtube-dl"
-	alias ya="get-audio"
-
+	# alias ya="get-audio"
+	alias clean-github="remove-github-forks $GITHUB_CLEAN_FORK"
 # ----------------------------------------------------------------------
 # | System                                                            |
 # ----------------------------------------------------------------------

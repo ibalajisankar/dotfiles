@@ -19,6 +19,7 @@ alias fetch='git fetch'
 alias push='git push origin'
 alias pull='git pull'
 alias gpu="git pull upstream master"
+alias pusht="git push --tags"
 alias fp='fetch && pull'
 alias gmm='git merge master'
 alias gmghp='git merge gh-pages'

@@ -128,7 +128,7 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Save screenshots to the Desktop
-defaults write com.apple.screencapture location -string "$HOME/Dropbox/Screenshots"
+defaults write com.apple.screencapture location -string "$HOME/Documents/Pictures/Screenshots"
 
 # Require password immediately after into sleep or screen saver mode
 defaults write com.apple.screensaver askForPassword -int 1

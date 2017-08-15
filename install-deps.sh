@@ -39,7 +39,6 @@ npm_packages=(
 	deployd
 	itunes-remote
 	fast-cli
-	local-npm
 	egghead-downloader
 	chrome-webstore-upload-cli
 	surge
@@ -47,6 +46,12 @@ npm_packages=(
 	npm-name-cli
 	pure-prompt
 	prepack
+	eslint
+	wifi-password-cli
+	xo
+	wipe-modules
+	pug
+	remove-github-forks
 	)
 
 sudo npm install -g ${npm_packages[@]}

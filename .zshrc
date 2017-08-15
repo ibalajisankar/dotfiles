@@ -1,4 +1,6 @@
+source ~/dotfiles/.secrets
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export PGHOST=localhost
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -18,7 +20,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 source $ZSH/oh-my-zsh.sh
 
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
 
 export PATH="/usr/local/mysql/bin:$PATH"
@@ -44,7 +46,6 @@ source ~/dotfiles/utils/z/z.sh
 
 # others
 source ~/.profile
-source ~/.secrets
 
 
 ### Bashhub.com Installation
